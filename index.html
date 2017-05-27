@@ -6,8 +6,6 @@
     <title>Formularz</title>
 </head>
 
-<link rel="stylesheet" href="css/style.css">
-
 <body>
     <form action="https://formspree.io/klibanoforos@gmail.com" method="post">
         <label for="imie">Imię:</label><br>
@@ -25,15 +23,16 @@
   		<option value="gdansk">Gdańsk</option>
 		</select> <br><br>
         <p>Płeć:</p>
-        <input type="radio" name="gender" id="gender" value="mezczyzna">
-        <label for="gender">Mężczyzna</label><br>
-        <input type="radio" name="gender" id="gender2" value="kobieta">
-        <label for="gender2">Kobieta</label> <br><br>
+        <input type="radio" id="mezczyzna" name="plec"> 
+        <label for="mezczyzna">Mężczyzna</label><br>
+        <input type="radio" id="kobieta" name="plec">
+        <label for="kobieta">Kobieta</label><br><br>
+        <input type="checkbox" name="zgoda" id="zgoda"> 
+        <label for="zgoda">Zgadzam się na przetwarzanie danych osobowych</label><br><br>
         <label for="wiadomosc">Wiadomość:</label><br>
-        <textarea name="wiadomosc" id="wiadomosc" rows="1" cols="30"></textarea> <br>
-        <input type="checkbox" name="zgoda" id="zgoda"> Zgadzam się na przetwarzanie moich danych osobowych
-        <label for="zgoda"></label><br><br>
-        <input type="submit" value="send">
+        <textarea name="wiadomosc" id="wiadomosc" rows="10" cols="30"></textarea> <br>
+        <input type="reset">
+        <input type="submit">
     </form>
 </body>
 
