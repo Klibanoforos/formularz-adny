@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+    <form action="https://formspree.io/klibanoforos@gmail.com" method="post">
+        <label for="imie">Imię:</label><br>
+        <input type="text" name="imie" id="imie"> <br><br>
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" name="nazwisko" id="nazwisko"> <br><br>
+        <label for="adres_email">Adres email:</label><br>
+        <input type="email" name="adres_email" id="adres_email"> <br><br>
+        <label for="telefon">Telefon:</label><br>
+        <input type="tel" name="telefon" id="telefon"><br><br>
+        <label for="miasto">Miasto:</label><br>
+        <select id="miasto">
+  		<option value="warszawa">Warszawa</option>
+  		<option value="krakow">Kraków</option>
+  		<option value="gdansk">Gdańsk</option>
+		</select> <br><br>
+        <p>Płeć:</p>
+        <input type="radio" name="gender" id="gender" value="mezczyzna">
+        <label for="gender">Mężczyzna</label><br>
+        <input type="radio" name="gender" id="gender2" value="kobieta">
+        <label for="gender2">Kobieta</label> <br><br>
+        <label for="wiadomosc">Wiadomość:</label><br>
+        <textarea name="wiadomosc" id="wiadomosc" rows="1" cols="30"></textarea> <br>
+        <input type="checkbox" name="zgoda" id="zgoda"> Zgadzam się na przetwarzanie moich danych osobowych
+        <label for="zgoda"></label><br><br>
+        <input type="submit" value="send">
+    </form>
+</body>
+
+</html>
